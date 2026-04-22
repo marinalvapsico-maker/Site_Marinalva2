@@ -1,0 +1,217 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+:root {
+  --green: #ffffff;
+  --white: #e0e0e0;
+  --grey-700: #440844;
+  --grey-800: #ffffff;
+  --grey-900: #888888;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter";
+}
+
+body {
+  background: var(--grey-900);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:flex-start;
+  min-height: 100vh;
+  padding: 20px 0 0 0;
+  margin: 0;
+  gap: 20px;
+}
+
+.container {
+  background: var(--grey-800);
+  width: 100%;
+  min-height: 85vh;
+  max-width: 350px;
+  padding: 50px 30px;
+  
+  text-align: center;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+img { 
+  width: 150px;
+  height: 150px;
+  border-radius: 100px;
+  object-fit: cover;
+  object-position: center 15%;
+  display: block;
+  margin: 0 auto;
+  border: 4px solid var(--white);
+  
+  }
+
+h1 {
+  font-size: 24px;
+  color:#000000 ;
+  /*color: var(--white);*/
+  margin-top: 20px 40px 20px 0;
+}
+
+h2 {
+  font-size: 14px;
+  color: var(--green);
+  margin-top: 10px;
+}
+
+p {
+  margin: 20px 0;
+  color: var(--white);
+  font-size: 14px;
+}
+
+a {
+  display: block;
+  margin: 10px 0;
+  padding: 12px 0;
+  border-radius: 5px;
+  text-decoration: none;
+  color: var(--white);
+  font-weight: bold;
+  background: var(--grey-700);
+  font-size: 14px;
+}
+
+a:hover {
+  background-color: #C8A2C8; 
+  color: #330033; 
+  transition: 0.3s;
+}
+
+
+
+
+footer {
+  width: 100%;
+  background-color: #330033; /* Cor sólida como na imagem */
+  padding: 80px 40px;
+  color: #ffffff;
+}
+
+
+.footer-container {
+  max-width: 1000px; /* Alinhamos aqui */
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.footer-col {
+  flex: 1;
+  min-width: 150px;
+}
+
+.footer-col h3 {
+  font-size: 20px; /* Título grande como na imagem */
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.footer-col ul {
+  list-style: none; /* Remove as bolinhas da lista */
+  padding: 0;
+}
+
+.footer-col ul li {
+  margin-bottom: 12px;
+  font-size: 16px;
+  opacity: 0.9;
+}
+
+
+
+
+
+/* Container dos ícones */
+.footer-social-icons {
+  display: flex;
+  justify-content: flex-start; 
+  gap: 20px; 
+  max-width: 1000px; 
+  margin: 0 auto 30px auto; 
+  padding: 0; 
+}
+
+.footer-social-icons a {
+    background: none;
+    padding: 0;           
+    margin: 0;
+    border: none;         
+    display: inline-block;         
+    width: auto;        
+    box-shadow: none;
+  }
+    
+
+.footer-social-icons img {
+  width: 25px;    /* Tamanho pequeno desejado */
+  height: 25px;
+  border-radius: 0; 
+  border: none;    
+  background: none;
+  margin: 0;             
+  padding: 0;
+  object-fit: contain;
+}
+
+
+/* Responsivo apenas com um breakpoint simples */
+@media screen and (max-width: 700px) {
+  img {
+    width: 120px;
+    height: 120px;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  h2, p, a {
+    font-size: 13px;
+  }
+
+  a {
+    padding: 10px 0;
+  }
+}
+
+/* Responsividade para celulares pequenos */
+@media (max-width: 400px) {
+  img {
+    max-width: 120px;
+    height: 120px;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  h2, p, .links a {
+    font-size: 13px;
+  }
+
+  .links a {
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .footer-columns {
+    flex-direction: column; /* Volta a ser uma embaixo da outra no celular */
+    text-align: center; /* Centraliza o texto no celular */
+    gap: 10px;
+  }
+}
